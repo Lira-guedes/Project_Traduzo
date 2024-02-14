@@ -19,7 +19,7 @@
             <select name="translate-from">
                {% for language in languages %}
                   <option value="{{ language.acronym }}" 
-                    {% if language.acronym == translate_from %}
+                    {% if language.acronym==translate_from %}
                       selected
                     {% endif %}>
                       {{ language.name | upper }}
