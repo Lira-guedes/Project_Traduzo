@@ -35,7 +35,6 @@ def index():
             translate_to=_to,
             translated=_trans,
         )
-    
 
 
 @translate_controller.route("/reverse", methods=["POST"])
