@@ -6,7 +6,7 @@ from deep_translator import GoogleTranslator
 translate_controller = Blueprint("translate_controller", __name__)
 
 
-@translate_controller.route("/", methods=["GET, POST"])
+@translate_controller.route("/", methods=["GET", "POST"])
 def index():
     if request.method == "GET":
         # renderiza o template e passa as variaveis pra ele
@@ -35,6 +35,8 @@ def index():
             translate_to=_to,
             translated=_trans,
         )
+    
+
 
 @translate_controller.route("/reverse", methods=["POST"])
 def reverse():
@@ -47,8 +49,10 @@ def reverse():
         languages=LanguageModel.list_dicts(),
         # inverte o text to translate
         text_to_translate=_trans,
-        translate_from=_from,
-        translate_to=_to,
+        # inverte o from para to
+        translate_from=_to,
+        # inverte o to para from
+        translate_to=_from,
         # inverte o translated
         translated=_text,
     )
