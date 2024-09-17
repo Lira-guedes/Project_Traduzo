@@ -19,7 +19,6 @@
 </ul>
 
 <h3>Funcionalidades</h3>
-<p>O Traduzo oferece uma série de funcionalidades que tornam a tradução de textos prática e eficiente:</p>
 <ul>
 <li><strong>Tradução em Tempo Real:</strong> Usuários podem inserir textos e obter traduções instantaneamente entre diversos idiomas.</li>
 <li><strong>Histórico de Traduções:</strong> A aplicação armazena um registro das traduções realizadas, permitindo que usuários revisitem traduções anteriores.</li>
